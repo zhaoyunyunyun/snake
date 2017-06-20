@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.wrap{
+    position:relative;
+    height: 608px;
+    width: 608px;
+    margin: 10px auto;
+    border:1px solid red;
+}
+.message,.mode,.countdown,.mask{
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
+.wrap .mode p,.mask p{
+    font-weight:bold;
+    font-stretch: expanded;
+    color: pink;
+    text-align: center;
+    padding-top: 80px;
+    font-size: 50px;
+    text-shadow: deeppink 3px 3px;
+}
+.countdown p{
+    font-weight:bold;
+    font-stretch: expanded;
+    color: forestgreen;
+    text-align: center;
+    padding-top: 80px;
+    font-size: 50px;
+}
+.message p{
+    font-weight:bold;
+    font-stretch: expanded;
+    color: red;
+    text-align: center;
+    padding-top: 80px;
+    font-size: 50px;
+    text-shadow: darkred 3px 3px;
+
+}
+.countdown,.mask{
+    background-color: blanchedalmond;
+    opacity:0.2;
+}
+.wrap button{
+    background-color:lightblue;
+    display: block;
+    margin: 20px auto;
+    cursor: pointer;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    font:20px black ;
+}
+.scoreboard p{
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    font-size: 12px;
+}
+.play table{
+    border-collapse:collapse;
+}
+.play td{
+    border: 1px  solid #CCCCCC;
+}

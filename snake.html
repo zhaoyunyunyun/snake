@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>贪吃蛇大作战</title>
+    <link rel="stylesheet" type="text/css" href="css/snake.css">
+</head>
+<body>
+<p style="margin-top: 20px;margin-left: 15%;font-style: italic"><span style="font-weight: bold">Tips:</span>按方向键开始游戏，空格暂停或继续</p>
+<div class="wrap" >
+    <div class="scoreboard" id="scoreboard" style="display: none;">
+        <p>分数：<span id="score">500</span>  速度：<span id="speed">500</span>/格    <span id="level" style="display: none;">关卡：<em id="levelNum"></em></span></p>
+    </div>
+    <div class="mode" id="mode" style="display: block;	">
+        <p>贪吃蛇大作战</p>
+        <button>自由模式</button>
+        <button>闯关模式</button>
+        <button>挑战模式</button>
+    </div>
+    <div class="message" id="message"    style="display: none;">
+        <p id="gameresult">游戏结束</p>
+        <button id="returnMenu">返回主菜单</button>
+        <button id="restart">重新开始</button>
+        <button id="next" style="display: none;">下一关</button>
+    </div>
+    <div class="countdown"  id="countdown" style="display: none;">
+        <p>Are You Ready?</p>
+        <p id="time">3</p>
+    </div>
+    <div id="mask" class="mask" style="display: none;"><p>游戏暂停<br />按空格继续</p></div>
+    <div id="play" class="play"></div>
+</div>
+<audio   id="audio"   src="audio/7895.wav"  preload="auto"   loop="loop" >您的浏览器不支持 audio 标签。</audio>
+<script type="text/javascript" src="script/snake.js"></script>
+</body>
+</html>
